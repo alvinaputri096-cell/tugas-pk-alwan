@@ -13,6 +13,6 @@ int main()
     cout<<nama;
     cout<<"tempat lahir adalah   "<<endl;
     cout<<tempat_lahir<<endl;
-   system("pause")
+   system("pause");
     return 0;
 }
