@@ -1,0 +1,20 @@
+
+name: Compile C++
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ambil kode dari repository
+        uses: actions/checkout@v4
+
+      - name: Kompilasi C++
+        run: g++ project.cpp -o main
+
+      - name: Jalankan program
+        run: ./main
